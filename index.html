@@ -14,48 +14,53 @@
     <title>What's the weather!</title>
   </head>
   <body>
-    <form id="search-form" class="mb-3">
-      <div class="row">
-        <div class="col-9">
-          <input
-            type="search"
-            placeholder="Enter your city.."
-            class="form-control"
-            id="city-input"
-            autocomplete="off"
-          />
-        </div>
-        <div class="col-3">
-          <input type="submit" value="Search" class="btn btn-secondary" />
-        </div>
-      </div>
-    </form>
+    <div class="container">
+      <div class="wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter your city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-secondary" />
+              </div>
+            </div>
+          </form>
 
-    <h1 id="city">Edinburgh</h1>
-    <ul>
-      <li id="date">Wednesday</li>
-      <li id="description">Mixed</li>
-    </ul>
-    <div>
-      <div class="row">
-        <div class="col-6">
-          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-          <strong id="temperature">13°</strong>
+          <h1 id="city">Edinburgh</h1>
+          <ul>
+            <li id="date">Wednesday</li>
+            <li id="description">Mixed</li>
+          </ul>
+          <div>
+            <div class="row">
+              <div class="col-6">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+                <strong id="temperature">13°</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity">76</span>%</li>
+              <li>Wind: <span id="wind">10</span>km/h</li>
+            </ul>
+          </div>
         </div>
+        <footer>
+          <a href="https://github.com/pritti49" target="_blank"
+            >Open soruce code, by Pritti Majithia</a
+          >
+        </footer>
       </div>
-    </div>
-    <div class="col-6">
-      <ul>
-        <li>Humidity: <span id="humidity">76</span>%</li>
-        <li>Wind: <span id="wind">10</span>km/h</li>
-      </ul>
     </div>
     <script src="src/app.js"></script>
-
-    <footer>
-      <a href="https://github.com/pritti49" target="_blank"
-        >Open soruce code, by Pritti Majithia</a
-      >
-    </footer>
   </body>
 </html>
