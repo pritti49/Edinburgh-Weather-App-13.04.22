@@ -26,9 +26,15 @@ li {
 }
 .weather-app {
     padding: 20px;
-    border: 2px solid chartreuse;
+    border: 2px solid rgb(0, 38, 255);
+    border-radius: 8px;
+    
 }
 .wrapper {
     max-width: 600px;
     margin: 30px auto;
+}
+.clearfix weather-temperature  {
+margin-right: 10px;
+float:right
 }

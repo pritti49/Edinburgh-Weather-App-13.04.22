@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>What's the weather!</title>
   </head>
@@ -42,8 +43,17 @@
           <div>
             <div class="row">
               <div class="col-6">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-                <strong id="temperature">13°</strong>
+                <div class="clearfix weather-temperature">
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <div class="float-left">
+                    <strong id="temperature">•C</strong
+                    ><span class="units"
+                      ><a href="#" id="celsius-link" class="active"> •C </a> |
+
+                      <a href="#" id="fahrenheit-link">•F</a></span
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
