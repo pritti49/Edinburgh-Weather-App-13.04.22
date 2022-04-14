@@ -26,7 +26,7 @@ li {
 }
 .weather-app {
     padding: 20px;
-    border: 2px solid rgb(0, 38, 255);
+    border: 2px solid #0026ff;
     border-radius: 8px;
     
 }
@@ -37,4 +37,22 @@ li {
 .clearfix weather-temperature  {
 margin-right: 10px;
 float:right
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    color: #272426;
+}
+.weather-forecast-date 
+{
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.4;
+}
+.weather-forecast-temperature {
+    font-size: 10px;
 }
