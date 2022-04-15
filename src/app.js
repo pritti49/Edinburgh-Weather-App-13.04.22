@@ -23,12 +23,35 @@ function formatDate(timestamp) {
 }
 //added last
 function displayForecast() {
-  let forecastElemet = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
 
-  forecastElemet.innerHTML ="";
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tues", "Wed"];
 
-            
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 18° </span>
+          <span class="weather-forecast-temperature-min"> 12° </span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  
 }
+
 
 
 
@@ -112,3 +135,4 @@ let celsiusLink= document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusLink);
 
 search ("Edinburgh");
+displayForecast();
